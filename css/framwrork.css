@@ -1,0 +1,43 @@
+
+
+/* start margin */
+.margin-bottom {
+    margin-bottom: 266px;
+}
+.m-0{
+    margin: 0;
+}
+.m-t{
+    margin-top: 10px;
+}
+.m-b{
+    margin-bottom: 10px;
+}
+/* end margin */
+
+/* start flex */
+.d-f{
+    display: flex;
+}
+.f-w {
+    flex-wrap: wrap;
+}
+/* end flex */
+
+/* start img */
+.w-f{
+    width: 100%;
+}
+/* end img */
+
+.padding-section{
+    padding-top:10rem ;
+    padding-bottom: 10rem;
+}
+.padding-section-top{
+    padding-top: 10rem;
+
+}
+.padding-section-bottom{
+    padding-bottom: 10rem;
+}
