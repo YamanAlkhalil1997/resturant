@@ -3,7 +3,7 @@
 
 :root {
 --font-family : "Cairo", sans-serif; 
---main-color : #ffc107;
+--main-color : #FFC55A
 }
 
 * {
@@ -55,9 +55,16 @@ li{ list-style: none;}
 }
 /* end global rules */
 /* start nav */
+
 .navbar-brand{
     font-size:30px;
-    color:var(--main-color);
+    color: #ffc55a;
+        font-family: "Cookie", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+      
+   
 }
 .navbar-toggler:focus{
     box-shadow: 0 0 0 .25rem #ffc107
@@ -76,14 +83,6 @@ li{ list-style: none;}
    
 
 
-/* start intro video */
-.intro { position: relative}
-   
-.video video{
-    width: 100%;
-    filter: brightness(0.5)
-}
-/* end intro video*/
 
 /* start spical menu */
 @media (min-width:768px) {
@@ -119,16 +118,16 @@ li{ list-style: none;}
     }
 }
 
-
+/* start spical menu */
 .special_menus .menus {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-
-/* 991 767 */
-
+.special_menus{padding-top: 2rem;
+padding-bottom: 2rem;
+}
 .special_menus .menus .menu {
     position: relative;
     overflow: hidden;
@@ -138,8 +137,14 @@ li{ list-style: none;}
     max-width: 100%;
     height: auto;
     padding: 10px;
-    transition: all 0.3s ease-out
-    
+    transition: all 0.3s ease-out;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+@media (max-width:767px) {
+    .special_menus .menus .menu img {
+        clip-path: none;
+    }
 }
 .special_menus .menus .menu:hover img{transform:  scale(1.1)}
     
@@ -147,13 +152,14 @@ li{ list-style: none;}
 .special_menus .menus .menu > span {
     position: absolute;
     top: 20px;
-    right: 14px;
+    right: 33px;
     padding: 10px;
     width: fit-content;
     background-color:  var(--main-color);
     border-radius: 20px;
     font-family: var(--font-family);
     display: block;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -192,12 +198,9 @@ li{ list-style: none;}
 
 /* start news section */
 section {
-background-image: url(../img/alex-haney-CAhjZmVk5H4-unsplash.jpg);
+background: url(../img/alex-haney-CAhjZmVk5H4-unsplash.jpg) no-repeat fixed;
 height: 500px;
-background-repeat: no-repeat;
 background-size: cover;
-background-attachment: fixed;
-
 }
 @media (max-width:767px) {
     section{
@@ -313,63 +316,6 @@ background-attachment: fixed;
     transition: all 0.3s ease-in-out;
 }
 /* end news secrion */
-/* start footer */
-
-.foot  {
-    position: absolute;
-    height: auto;
-    width: 100%;
-    background-color: #647179;
-}
-
-
-
-
-.foot .row .head-foot h1 {
-    color: white;
-    text-transform: capitalize;
-    font-size: 40px;
-}
-
-.foot .row .social h5 { text-align: center}
-
-
-.foot .row .social .stars {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0 10px 0;
-    color: #AAA;
-   
-}
-.foot .row .social .stars i {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    color: white;
-}
-
-.foot .row .social .stars i:hover{
-    transform: translateY(-2px);
-}
-
-.foot .row .social .stars i:nth-child(1):hover{ color: #0165E1}
-.foot .row .social .stars i:nth-child(2):hover{ color: #E4405F}
-.foot .row .social .stars i:nth-child(3):hover{color: #1DA1F2}
-.foot .row .social .stars i:nth-child(4):hover{color: #ff0000}
-
-
-.foot .row .social .copy {
-    color: white;
-    text-align: center;
-    font-size: 14px;
-}
-.foot .row h5 {
-    font-size: 25px;
-    text-transform: capitalize;
-
-}
-/* end footer */
-
 
 
 /* start Kitchen's Story page */
@@ -651,3 +597,66 @@ text-align: center;
 .form .butt button:hover{ background-color: #dc3545}
    
 /*end concat  page */
+
+/* start footer */
+
+
+    .foot  {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        background-color: #19283f;
+    }
+    
+    
+    
+    
+    .foot .row .head-foot h1 {
+        color: white;
+        text-transform: capitalize;
+        font-size: 40px;
+    }
+    
+    .foot .row .social h5 { text-align: center}
+    
+    
+    .foot .row .social .stars {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0 10px 0;
+        color: #32a9f2;
+       
+    }
+    .foot .row .social .stars i {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: white;
+    }
+    
+    .foot .row .social .stars i:hover{
+        transform: translateY(-2px);
+    }
+    
+    .foot .row .social .stars i:nth-child(1):hover{ color: #0165E1}
+    .foot .row .social .stars i:nth-child(2):hover{ color: #E4405F}
+    .foot .row .social .stars i:nth-child(3):hover{color: #1DA1F2}
+    .foot .row .social .stars i:nth-child(4):hover{color: #ff0000}
+    
+    
+    .foot .row .social .copy {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+    .foot .row h5 {
+        font-size: 25px;
+        text-transform: capitalize;
+    
+    }
+    /* end footer */
+    
+    
+
+
+
